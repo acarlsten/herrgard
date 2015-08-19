@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'Ballantines';
+  src: url("fonts/BallantinesScript-Regular.ttf") format('truetype'), url("fonts/BallantinesScript-Regular.otf") format('opentype');
+}
+
+.section {
+  padding: 4rem 0 4rem;
+  text-align: center;
+}
+
+/* slider styling */
+.splash {
+  width: 100%;
+  padding: 2rem 0 2rem;
+  z-index: 0;
+  position: relative;
+}
+
+/* HEADER styling */
+
+header {
+  padding: 3rem 0 4rem;
+  text-align: center;
+  font-family: 'Ballantines', serif;
+  overflow:auto;
+}
+
+header h1 {
+  letter-spacing: normal;
+  float: right;
+}
+
+header h1 a {
+  color: #000;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: #000;
+}
+
+header img {
+  max-width: 11rem;
+  margin-left: 2rem;
+  float:left;
+}
+
+/* hacky method to center (rather than float left/right) logo and header when screen gets resized */
+
+@media screen and (max-width: 550px) {
+    header h1 {
+      float: none;
+    }
+    header img {
+      float: none;
+    }
+}
+
+/* Sticky stuff */
+
+.hidden-until-sticky {
+  display: none;
+}
+
+.navlogo {
+  float: left;
+  font-family: 'Ballantines', serif;
+  padding: 0.15rem 0.5rem 0;
+  max-height: 3rem;
+}
+.navlogo img {
+  height:3.6rem;
+}
+
+.sticky {
+  background-color: #FFF;
+  z-index: 90;
+}
+
+.is-sticky > div {
+  padding:0 0 0.5rem;
+  /* border-bottom: 1px solid #000; */
+  box-shadow: 0 1px 2px rgba(0,0,0, .4);
+}
+
+.is-sticky .hidden-padding {
+  padding: 1rem 0 0rem;
+}
+.is-sticky .hidden-until-sticky {
+  display: block;
+}
+
+/* NAVBAR styling */
+
+nav {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold; */
+    font-style: oblique;
+    font-size: 1.7rem;
+}
+
+nav ul {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #FFF;
+}
+
+nav ul li {
+    list-style: none;
+    display: table-cell;
+    text-align: center;
+    border-right: 1px dotted #ccc;
+    position: relative;
+}
+
+nav ul li:hover {
+  background-color: #f2f2f2;
+}
+
+nav ul li:last-child {
+     border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* navbars for subpages styling */
+.spacer {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem 0 1rem;
+  border-bottom: 1px solid #000;
+}
+.subnav {
+  padding: 1rem 0 0;
+  z-index: 91;
+}
+
+/* navbar submenu styling */
+
+nav ul li ul {
+  position: absolute;
+  width: 100%;
+	visibility:hidden;
+	margin:0;
+	padding:0.2rem;
+  background-color: #FFF;
+  z-index: 99;
+  border: 1px solid #dedede;
+}
+
+nav ul li ul li {
+  display:inline;
+  float:none;
+  border: none;
+}
+
+nav ul li ul li a {
+  color: #000;
+  border-bottom: 1px dotted #dedede;
+}
+/* embarassing but :last-child wouldn't work */
+.noborder {
+  border-bottom: none;
+}
+
+nav ul li ul li a:hover {
+  text-decoration: underline;
+}
+
+/* MAT & DRYCK STYLING */
+
+.oppettider {
+  background-image: url("../images/placeholderoppettiderbg.jpg");
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+/* FOOTER STYLING */
+.footer {
+/*   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  background-color: #000;
+  color: white;
+  padding: 3rem 0 0;
+}
+
+.footer img {
+ padding-right: 1rem;
+}
