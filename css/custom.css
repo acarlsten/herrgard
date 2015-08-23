@@ -188,9 +188,6 @@ nav ul li ul li a:hover {
 
 .framsidabakgrund {
   margin: 4rem 0 4rem;
-  height: 35rem;
-  background-image: url("../images/splash1.png");
-  background-size: cover;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
