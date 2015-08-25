@@ -2,7 +2,7 @@
 $(function(){
     $(".slides").slidesjs({
     width: 800,
-    height: 281,
+    height: 227,
     pagination: false,
     generatePagination: false,
     navigation: false,
