@@ -17,6 +17,27 @@
   z-index: 0;
 }
 
+
+/* gömmer slider, bokning och menyn på mindre skärmar obs FÖRFINA */
+
+@media screen and (max-width: 800px) {
+    .sticky {
+      display: none;
+    }
+    .bokning {
+      display: none;
+    }
+    .imageslider {
+      display: none;
+    }
+    .hidden-mobile {
+      display: none;
+    }
+    .sticky-wrapper {
+      display: none;
+    }
+}
+
 /* bokingsmeny */
 
 .imageslider {
